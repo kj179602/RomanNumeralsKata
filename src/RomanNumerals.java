@@ -10,6 +10,8 @@ public class RomanNumerals {
 			return multiplyNumber(arabicNumber, "I");
 		case 5:
 			return "V";
+		case 6:
+			return "VI";
 		default:
 			return " ";
 		}
