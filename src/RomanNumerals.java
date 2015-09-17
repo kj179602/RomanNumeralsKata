@@ -7,14 +7,19 @@ public class RomanNumerals {
 		
 		case 1:
 		case 2:
+		case 3:
 			return multiplyNumber(arabicNumber, "I");
 		case 5:
 			return "V";
 		case 6:
 		case 7:
-			return "V" + multiplyNumber(arabicNumber - 5, "I");
+		case 8:
+			arabicNumber -= 5;
+			return "V" + multiplyNumber(arabicNumber, "I");
+		case 10:
 		case 20:
-			return multiplyNumber(arabicNumber / 10, "X");
+			arabicNumber /= 10;
+			return multiplyNumber(arabicNumber, "X");
 		default:
 			return " ";
 		}

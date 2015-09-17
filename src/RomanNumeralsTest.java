@@ -37,8 +37,8 @@ public class RomanNumeralsTest {
 	@Test
 	public void testConverts2ToII(){
 		
-		roman = arabicNumber.convert(2);
-		assertEquals(roman, "II");
+		roman = arabicNumber.convert(3);
+		assertEquals(roman, "III");
 	}
 	@Test
 	public void testConverts6ToVI(){
