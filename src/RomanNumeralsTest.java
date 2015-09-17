@@ -37,8 +37,8 @@ public class RomanNumeralsTest {
 	@Test
 	public void testConverts2ToII(){
 		
-		roman = arabicNumber.convert(3);
-		assertEquals(roman, "III");
+		roman = arabicNumber.convert(2);
+		assertEquals(roman, "II");
 	}
 	@Test
 	public void testConverts6ToVI(){
@@ -59,5 +59,12 @@ public class RomanNumeralsTest {
 		
 		roman = arabicNumber.convert(20);
 		assertEquals(roman, "XX");
+	}
+	
+	@Test
+	public void testConverts300ToCCC(){
+		
+		roman = arabicNumber.convert(300);
+		assertEquals(roman, "CCC");
 	}
 }
