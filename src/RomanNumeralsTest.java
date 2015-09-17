@@ -28,9 +28,15 @@ public class RomanNumeralsTest {
 	}
 	
 	@Test
-	public void testConvrts5ToV(){
+	public void testConverts5ToV(){
 		
 		roman = arabicNumber.convert(5);
 		assertEquals(roman, "V");
+	}
+	@Test
+	public void testConverts2ToII(){
+		
+		roman = arabicNumber.convert(2);
+		assertEquals(roman, "II");
 	}
 }
