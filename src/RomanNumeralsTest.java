@@ -33,10 +33,17 @@ public class RomanNumeralsTest {
 		roman = arabicNumber.convert(5);
 		assertEquals(roman, "V");
 	}
+	
 	@Test
 	public void testConverts2ToII(){
 		
 		roman = arabicNumber.convert(2);
 		assertEquals(roman, "II");
+	}
+	@Test
+	public void testConverts6ToVI(){
+		
+		roman = arabicNumber.convert(6);
+		assertEquals(roman, "VI");
 	}
 }
