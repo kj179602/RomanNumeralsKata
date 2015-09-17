@@ -6,8 +6,9 @@ import org.junit.Test;
 public class RomanNumeralsTest {
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void testConverts0ToABlankString() {
+		String roman = number.convert(0);
+		assertEquals(roman, " ");
 	}
 
 }
