@@ -1,24 +1,25 @@
 
 public class RomanNumerals {
 
-	public String convert(int number) {
+	public String convert(int arabicNumber) {
 		
-		if(number == 0){
+		switch(arabicNumber){
+		
+		case 1:
+		case 2:
+			return multiplyNumber(arabicNumber, "I");
+		case 5:
+			return "V";
+		default:
 			return " ";
 		}
-		else if(number == 1 || number == 2){
-			
-			return multiplyNumber(number, "I");
-		}
-		else{
-			return "V";
-		}
+		
 	}
-	public String multiplyNumber(int number, String romanNumber){
-		String newNumber = "";
-		for(int i = 0; i< number; i++){
-			newNumber = romanNumber + newNumber;
+	public String multiplyNumber(int arabicNumber, String romanNumber){
+		String newRomanNumber = "";
+		for(int i = 0; i < arabicNumber; i++){
+			newRomanNumber = romanNumber + newRomanNumber;
 		}
-		return newNumber;
+		return newRomanNumber;
 	}
 }
