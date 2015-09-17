@@ -6,10 +6,12 @@ public class RomanNumerals {
 		if(number == 0){
 			return " ";
 		}
-		else{
+		else if(number == 1){
 			return "I";
 		}
-		
+		else{
+			return "V";
+		}
 	}
 
 }
