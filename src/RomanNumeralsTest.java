@@ -7,16 +7,24 @@ import org.junit.Test;
 public class RomanNumeralsTest {
 
 	private RomanNumerals arabicNumber;
-	
+	private String roman;
 	@Before
 	public void setUp() throws Exception {
 		arabicNumber = new RomanNumerals();
 	}
+	
 	@Test
 	public void testConverts0ToABlankString() {
 		
-		String roman = arabicNumber.convert(0);
+		roman = arabicNumber.convert(0);
 		assertEquals(roman, " ");
 	}
 
+	@Test
+	public void testConverts1ToI(){
+		
+		roman = arabicNumber.convert(1);
+		assertEquals(roman, "I");
+	}
+	
 }
