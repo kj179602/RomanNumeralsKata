@@ -46,4 +46,11 @@ public class RomanNumeralsTest {
 		roman = arabicNumber.convert(6);
 		assertEquals(roman, "VI");
 	}
+	
+	@Test
+	public void testConverts7ToVII(){
+		
+		roman = arabicNumber.convert(7);
+		assertEquals(roman, "VII");
+	}
 }
