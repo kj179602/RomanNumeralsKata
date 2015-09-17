@@ -1,9 +1,16 @@
 
 public class RomanNumerals {
 
-	public String convert(int i) {
+	public String convert(int number) {
 		// TODO Auto-generated method stub
-		return " ";
+		if(number == 0){
+			return " ";
+		}
+		
+		else{
+			return "I";
+		}
+		
 	}
 
 }
