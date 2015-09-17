@@ -53,4 +53,11 @@ public class RomanNumeralsTest {
 		roman = arabicNumber.convert(7);
 		assertEquals(roman, "VII");
 	}
+	
+	@Test
+	public void testConverts20ToXX(){
+		
+		roman = arabicNumber.convert(20);
+		assertEquals(roman, "XX");
+	}
 }
