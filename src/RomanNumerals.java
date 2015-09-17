@@ -11,9 +11,8 @@ public class RomanNumerals {
 		case 5:
 			return "V";
 		case 6:
-			return "VI";
 		case 7:
-			return "VII";
+			return "V" + multiplyNumber(arabicNumber - 5, "I");
 		default:
 			return " ";
 		}
