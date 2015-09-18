@@ -67,4 +67,10 @@ public class RomanNumeralsTest {
 		roman = arabicNumber.convert(300);
 		assertEquals(roman, "CCC");
 	}
+	@Test
+	public void testConverts23ToXXIII(){
+		
+		roman = arabicNumber.convert(23);
+		assertEquals(roman, "XXIII");
+	}
 }
