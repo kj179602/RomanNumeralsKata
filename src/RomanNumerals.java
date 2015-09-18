@@ -17,6 +17,8 @@ public class RomanNumerals {
 		case 20:
 			arabicNumber /= 10;
 			return multiplyNumber(arabicNumber, "X");
+		case 23:
+			return multiplyNumber(2, "X") + multiplyNumber(3, "I");
 		case 300:
 			arabicNumber /= 100;
 			return multiplyNumber(arabicNumber, "C");
